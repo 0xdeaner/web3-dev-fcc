@@ -2,6 +2,8 @@ generated/
 build/
 Reference/
 .vscode/
+.idea/
+
 
 **/.DS_Store
 
@@ -52,6 +54,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+typechain-types/
 
 # Text generating from running deployment scripts
 results.txt
@@ -62,6 +65,7 @@ web_modules/
 # TypeScript cache
 *.tsbuildinfo
 
+
 # Optional npm cache directory
 .npm
 
@@ -70,6 +74,15 @@ web_modules/
 
 # Optional stylelint cache
 .stylelintcache
+
+# hardhat
+artifacts
+cache
+deployments
+node_modules
+coverage.json
+typechain
+
 
 # Microbundle cache
 .rpt2_cache/
@@ -148,4 +161,7 @@ dist
 
 # Matchstick generated file
 .bin
-/subgraphs.iml
+*.iml
+*/coverage.json
+*/gas-report.txt
+

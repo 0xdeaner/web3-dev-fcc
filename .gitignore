@@ -165,3 +165,4 @@ dist
 */coverage.json
 */gas-report.txt
 
+/simple-storage/typechain-types/

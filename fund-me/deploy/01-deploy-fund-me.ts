@@ -1,7 +1,7 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types"
 import { DeployFunction } from "hardhat-deploy/types"
 import verify from "../utils/verify"
-import { networkConfig, developmentChains } from "../helper-hardhat-config"
+import { networkConfig } from "../helper-hardhat-config"
 
 const deployFundMe: DeployFunction = async function(
   hre: HardhatRuntimeEnvironment

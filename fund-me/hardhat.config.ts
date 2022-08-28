@@ -1,12 +1,14 @@
-import("hardhat-gas-reporter")
-import("@nomiclabs/hardhat-etherscan")
-import("@nomicfoundation/hardhat-chai-matchers")
-import { task, HardhatUserConfig } from "hardhat/config"
+import "@typechain/hardhat"
+import "@nomiclabs/hardhat-etherscan"
+import "@nomiclabs/hardhat-ethers"
+import "@nomicfoundation/hardhat-chai-matchers"
+import "@nomicfoundation/hardhat-network-helpers"
+import "hardhat-gas-reporter"
 import "dotenv/config"
 import "solidity-coverage"
-import "@typechain/hardhat"
-import "@nomiclabs/hardhat-ethers"
 import "hardhat-deploy"
+import "solidity-coverage"
+import { HardhatUserConfig } from "hardhat/config"
 
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || ""
 const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL
